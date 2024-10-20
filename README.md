@@ -1,5 +1,7 @@
 ## Extração de Dados do Twitter com Airflow
 
+![Logo do Twitter](/home/anselmo/airflow_twitter/imagem_readme/data_LAKE.jpg)
+
 Este repositório contém um projeto para extrair dados do Twitter utilizando o Airflow.
 
 **Objetivo:**

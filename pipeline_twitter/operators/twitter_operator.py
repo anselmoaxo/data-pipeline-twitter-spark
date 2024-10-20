@@ -1,5 +1,5 @@
 import sys
-sys.path.append("airflow_pipeline")
+sys.path.append("pipeline_twitter")
 
 
 from airflow.models import BaseOperator, DAG, TaskInstance

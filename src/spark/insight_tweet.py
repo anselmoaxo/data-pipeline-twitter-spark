@@ -32,7 +32,7 @@ if __name__ == "__main__":
     )
     parser.add_argument("--src", required=True)
     parser.add_argument("--dest", required=True)
-    parser.add_argument("--process-date", required=True)
+    parser.add_argument("--process_date", required=True)
     args = parser.parse_args()
 
     spark = SparkSession\

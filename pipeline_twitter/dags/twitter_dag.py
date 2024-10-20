@@ -1,5 +1,5 @@
 import sys
-sys.path.append("airflow_pipeline")
+sys.path.append("pipeline_twitter")
 
 from airflow.models import DAG
 from datetime import datetime, timedelta
@@ -44,5 +44,7 @@ with DAG(dag_id = "TwitterDAG", start_date=days_ago(4), schedule_interval="@dail
                                                                 "--dest", BASE_FOLDER.format(stage="gold", 
                                                         partition=""),
                                                                 "--process_date" ,"{{ ds }}"])
+
+
     
     twitter_operator >> twitter_transform >> twitter_insight
